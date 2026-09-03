@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Newgens Esports - Counter-Strike Team">
+  <title>Newgens Esport</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <audio id="bg-audio" src="media/cs2sound.mp3" loop></audio>
+
+  <script>
+    document.addEventListener('click', () => {
+      const audio = document.getElementById('bg-audio');
+      audio.play().catch(error => {
+        console.log("Autoplay was prevented:", error);
+      });
+    }, { once: true });
+  </script>
+
+  <div class="page-container">
+    
+    <header class="navbar">
+      <div class="nav-brand">
+        <img src="images/untitled-design-1-34.png" alt="Newgens Logo" class="nav-logo">
+        <span class="brand-name">Newgens Esport</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#" class="nav-item active">HOME</a>
+        <a href="#" class="nav-item">SHOP</a>
+        <a href="#" class="nav-item">ABOUT</a>
+        <a href="#" class="nav-item login-btn">LOGIN</a>
+      </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+      <h2 class="hero-title">Follow New Generation Of Champion</h2>
+      <div class="hero-content">
+        <img src="images/untitled-design-1-1-38.png" alt="Left Pattern" class="hero-bg-icon">
+        <img src="images/untitled-design-4-1-37.png" alt="Team Roster" class="hero-team-img">
+        <img src="images/untitled-design-1-2-39.png" alt="Right Pattern" class="hero-bg-icon">
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      
+      <!-- About Section -->
+      <section class="about-section">
+        <h1 class="section-title">WHO ARE WE ?</h1>
+        <p class="subtitle">WE ARE NEWGENS WHO CREATE NEW TRENDS</p>
+        <p class="about-desc">
+          WE ARE NEWGENS WHO CREATE NEW TRENDS. WE ARE NOT JUST A NEW GENERATION—WE ARE THE FORCE THAT SHAPES WHAT COMES NEXT. ROOTED IN CREATIVITY AND DRIVEN BY UNSTOPPABLE PASSION, WE BRING TOGETHER CREATORS, INNOVATORS, AND REBELS TO REDEFINE CULTURE. BRIDGING GAMING, ART, FASHION, AND MUSIC, NEWGENS IS WHERE THE FUTURE BEGINS.
+        </p>
+      </section>
+
+      <!-- CS2 Section -->
+      <section class="cs2-section">
+        <div class="video-wrapper">
+          <video controls width="100%" height="auto">
+            <source src="media/ACECS2.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="section-divider">
+          <span class="line"></span>
+          <h2 class="cs2-title">CS2</h2>
+          <span class="line"></span>
+        </div>
+        <p class="cs2-desc">
+          NEWGENS ESPORTS COUNTER-STRIKE TEAM REPRESENTS THE PINNACLE OF ELITE COMPETITION — WHERE RAW MECHANICAL SKILL MEETS GLOBAL STAR POWER. THE ROSTER IS BUILT ON HIGH-PRESSURE PERFORMANCES, CLUTCH MOMENTS, AND A RELENTLESS DRIVE TO DOMINATE THE SERVER.
+        </p>
+      </section>
+
+      <!-- Roster Section -->
+      <section class="roster-section">
+        <h2 class="roster-title">ROSTER</h2>
+        <div class="roster-grid">
+          <div class="player-card">
+            <img src="images/image-7-18.png" alt="BlackDaisy" class="player-img">
+            <span class="player-name">BlackDaisy</span>
+          </div>
+          <div class="player-card">
+            <img src="images/image-8-19.png" alt="BlackDaisy" class="player-img">
+            <span class="player-name">BlackDaisy</span>
+          </div>
+          <div class="player-card">
+            <img src="images/image-9-20.png" alt="BlackDaisy" class="player-img">
+            <span class="player-name">BlackDaisy</span>
+          </div>
+          <div class="player-card">
+            <img src="images/image-10-21.png" alt="BlackDaisy" class="player-img">
+            <span class="player-name">BlackDaisy</span>
+          </div>
+          <div class="player-card">
+            <img src="images/image-11-22.png" alt="BlackDaisy" class="player-img">
+            <span class="player-name">BlackDaisy</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tournaments Section -->
+      <section class="tournaments-section">
+        <div class="section-divider">
+          <span class="line"></span>
+          <h2 class="tournaments-title">TOURNAMENTS</h2>
+          <span class="line"></span>
+        </div>
+        
+        <div class="tournament-year-block">
+          <h3 class="year-title">2026</h3>
+          <p class="placement-header">Top Placement</p>
+          <ul class="placement-list">
+            <li>8th placement @ CS2 TH Community SS1</li>
+            <li>5th placement @ CS2 Thailand Station</li>
+          </ul>
+        </div>
+
+        <div class="tournament-year-block">
+          <h3 class="year-title">2025</h3>
+          <p class="placement-header">Top Placement</p>
+          <ul class="placement-list">
+            <li>3-4th placement @ IEM COLOGNE</li>
+            <li>2th placement @ MAJOR ANTWERP</li>
+          </ul>
+        </div>
+
+        <div class="tournament-year-block">
+          <h3 class="year-title">2024</h3>
+          <p class="placement-header">Top Placement</p>
+          <ul class="placement-list">
+            <li>3th placement @ FACEIT ESEA</li>
+            <li>2th placement @ PGL MAJOR COPENHAGEN</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Quote & Rank Badge Section -->
+      <section class="quote-section">
+        <div class="badge-container">
+          <img src="images/image-5-61.png" alt="Global Elite Emblem" class="badge-img">
+        </div>
+        <div class="quote-text">
+          <p>“ NO PRESSURE</p>
+          <p class="indent-text">NO GLOBAL ELITE”</p>
+        </div>
+      </section>
+
+    </main>
+
+  </div> <!-- page-container -->
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col follow-col">
+        <h4>FOLLOW US</h4>
+        <div class="social-icons">
+          <img src="images/node-67.png" alt="X" class="social-icon">
+          <img src="images/node-68.png" alt="Facebook" class="social-icon">
+          <img src="images/node-69.png" alt="YouTube" class="social-icon">
+          <img src="images/node-70.png" alt="Instagram" class="social-icon">
+        </div>
+        <p class="handle">@NEWGENS ESPORTS</p>
+      </div>
+
+      <div class="footer-col about-col">
+        <h4>ABOUT</h4>
+        <p class="footer-desc">
+          Lorem ipsum dolor sit amet consectetur. Consequat tortor odio nullam quisque et habitant eu nunc. Lacus quisque egestas fames duis habitant tristique vivamus gravida habitasse. Egestas viverra purus fringilla tristique in sollicitudin. Ullamcorper porttitor dignissim pellentesque scelerisque mauris integer habitant.
+        </p>
+      </div>
+
+      <div class="footer-col newsletter-col">
+        <h4>NEWSLETTER</h4>
+        <div class="email-input-wrap">
+          <input type="email" placeholder="E-MAIL" class="email-input">
+        </div>
+        <p class="copyright">Newgens Esport All Rights Reserve.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

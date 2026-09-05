@@ -132,8 +132,9 @@ body {
 }
 
 .hero-team-img {
-  max-width: 420px;
+  max-width: 1000px;
   height: auto;
+  transform: translateY(22px);
 }
 
 /* Main Content Wrapper */
@@ -413,4 +414,14 @@ body {
   display: block; /* แก้ปัญหาช่องว่างด้านล่าง */
   width: 100%;    /* ให้ขยายเต็มความกว้างของ .video-wrapper */
   height: auto;   /* คงอัตราส่วนวิดีโอไว้ */
+}
+
+.nav-item:hover {
+  background-color: var(--color-gold-light);
+  color: var(--bg-dark);
+}
+
+.nav-item.login-btn:hover {
+  background-color: var(--color-gold-dark);
+  color: var(--color-white);
 }
